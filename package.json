@@ -1,0 +1,16 @@
+{
+  "name": "@geolonia/eslint-config",
+  "version": "0.0.0",
+  "description": "Geolonia ESLint Configs",
+  "main": "index.js",
+  "author": "Geolonia (https://geolonia.com)",
+  "license": "MIT",
+  "private": false,
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "peerDependencies": {
+    "eslint": ">= 3"
+  }
+}
