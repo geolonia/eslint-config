@@ -4,4 +4,4 @@ const main = () => {
   new window.Geolonia.Map(map);
 };
 
-main()
+main();
