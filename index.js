@@ -2,7 +2,6 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
-    'plugin:react/recommended',
     'plugin:editorconfig/all',
   ],
   plugins: ['editorconfig'],
@@ -38,18 +37,4 @@ module.exports = {
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/no-var-requires': 'off',
   },
-  settings: {
-    react: {
-      pragma: 'React',
-      version: 'detect',
-    },
-  },
-  overrides: [
-    {
-      files: ['**/*.tsx'],
-      rules: {
-        'react/prop-types': 'off',
-      },
-    },
-  ],
 };
