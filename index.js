@@ -24,7 +24,7 @@ module.exports = {
     semi: ['error', 'always'],
     'template-curly-spacing': 'error',
     'yield-star-spacing': 'error',
-    'yoda': ["error", "never", { "onlyEquality": true }],
+    'yoda': ["error", "never", { "exceptRange": true }],
     quotes: ['error', 'single'],
     'comma-dangle': ['error', 'always-multiline'],
     'no-console': 'warn',
