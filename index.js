@@ -1,5 +1,11 @@
 module.exports = {
-  extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended'],
+  extends: [
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:react/recommended',
+    'plugin:editorconfig/all',
+  ],
+  plugins: ['editorconfig'],
   rules: {
     'arrow-parens': 'error',
     'arrow-spacing': 'error',
@@ -9,22 +15,22 @@ module.exports = {
     'no-useless-constructor': 'error',
     'no-useless-rename': 'error',
     'no-var': 'error',
+    'no-unused-vars': 'warn',
     'prefer-arrow-callback': 'error',
     'prefer-const': 'error',
     'prefer-rest-params': 'error',
     'prefer-spread': 'error',
     'prefer-template': 'error',
     'rest-spread-spacing': 'error',
+    semi: ['error', 'always'],
     'template-curly-spacing': 'error',
     'yield-star-spacing': 'error',
     quotes: ['error', 'single'],
-    yoda: ['error', 'always'],
     'comma-dangle': ['error', 'always-multiline'],
     'no-console': 'warn',
     '@typescript-eslint/ban-ts-comment': 'off',
     '@typescript-eslint/camelcase': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
-    'react/prop-types': 'off', // TypeScript will take care of prop validation
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/no-unused-vars': 'off',
     '@typescript-eslint/no-empty-function': 'off',
@@ -32,4 +38,18 @@ module.exports = {
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/no-var-requires': 'off',
   },
+  settings: {
+    react: {
+      pragma: 'React',
+      version: 'detect',
+    },
+  },
+  overrides: [
+    {
+      files: ['**/*.tsx'],
+      rules: {
+        'react/prop-types': 'off',
+      },
+    },
+  ],
 };
