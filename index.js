@@ -37,8 +37,5 @@ module.exports = {
     '@typescript-eslint/ban-types': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/no-var-requires': 'off',
-    // NOTE: Some @typescript-eslint/eslint-plugin rules requires type information.
-    // If necessary, specify them individually within each config.
-    // https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin#supported-rules
   },
 };

@@ -19,6 +19,20 @@ module.exports = {
 
 ## Advanced
 
+### TypeScript
+
+```javascript
+module.exports = {
+  extends: ['@geolonia/eslint-config/typescript'],
+  env: {
+    node: true,
+  },
+  parserOptions: {
+    project: ['tsconfig.json'],
+  }
+};
+```
+
 ### extends for React project
 
 ```javascript
