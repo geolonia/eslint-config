@@ -6,9 +6,12 @@ module.exports = {
   ],
   plugins: ['editorconfig'],
   rules: {
+    'array-callback-return': 'error',
     'arrow-parens': 'error',
     'arrow-spacing': 'error',
     'block-spacing': 'error',
+    'comma-spacing': ['error', { before: false, after: true }],
+    //   indent: ['error', 2], // Follow editorconfig
     'key-spacing': 'error',
     'keyword-spacing': 'error',
     'generator-star-spacing': 'error',
@@ -26,6 +29,8 @@ module.exports = {
     'rest-spread-spacing': 'error',
     semi: ['error', 'always'],
     'semi-spacing': 'error',
+    'sort-imports': 'off',
+    'space-before-blocks': 'error',
     'template-curly-spacing': 'error',
     'yield-star-spacing': 'error',
     yoda: ['error', 'never', { exceptRange: true }],

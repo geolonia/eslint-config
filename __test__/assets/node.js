@@ -7,9 +7,12 @@ process.stdout.write(text);
 function hello() { process.stdout.write('hello'); }
 
 // keyword spacing
-if (process.env.HELLO){
+// space-before-blocks
+if (process.env.HELLO) {
   hello('hello');
 }
 
 // key spacing
 JSON.stringify({ a: 'a' });
+
+JSON.stringify([1, 1, 1, 1, 1]);
