@@ -8,6 +8,9 @@ module.exports = {
   rules: {
     'arrow-parens': 'error',
     'arrow-spacing': 'error',
+    'block-spacing': 'error',
+    'key-spacing': 'error',
+    'keyword-spacing': 'error',
     'generator-star-spacing': 'error',
     'no-duplicate-imports': 'error',
     'no-useless-computed-key': 'error',
@@ -22,9 +25,10 @@ module.exports = {
     'prefer-template': 'error',
     'rest-spread-spacing': 'error',
     semi: ['error', 'always'],
+    'semi-spacing': 'error',
     'template-curly-spacing': 'error',
     'yield-star-spacing': 'error',
-    'yoda': ['error', 'never', { 'exceptRange': true }],
+    yoda: ['error', 'never', { exceptRange: true }],
     quotes: ['error', 'single'],
     'comma-dangle': ['error', 'always-multiline'],
     'no-console': 'warn',
@@ -37,5 +41,6 @@ module.exports = {
     '@typescript-eslint/ban-types': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/no-var-requires': 'off',
+    '@typescript-eslint/no-extra-semi': 'off',
   },
 };
