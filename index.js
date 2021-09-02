@@ -1,9 +1,12 @@
 module.exports = {
   extends: [
     'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
     'plugin:editorconfig/all',
   ],
+  parserOptions: {
+    sourceType: 'module',
+    ecmaVersion: 2015,
+  },
   plugins: ['editorconfig'],
   rules: {
     'array-callback-return': 'error',
@@ -22,7 +25,7 @@ module.exports = {
     'no-useless-constructor': 'error',
     'no-useless-rename': 'error',
     'no-var': 'error',
-    'no-unused-vars': 'warn',
+    'no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
     'prefer-arrow-callback': 'error',
     'prefer-const': 'error',
     'prefer-rest-params': 'error',
