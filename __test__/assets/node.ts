@@ -2,7 +2,7 @@ import fs from 'fs';
 
 type Map = {
   [key in 'a' | 'b']: string;
-}
+};
 
 const map: Map = {
   'a': 'aaa',

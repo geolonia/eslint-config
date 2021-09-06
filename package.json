@@ -16,18 +16,21 @@
   "devDependencies": {
     "@types/node": "^16.6.0",
     "@types/react": "^17.0.17",
-    "eslint": "^7.32.0"
+    "eslint": "^7.32.0",
+    "react": "^17.0.2"
   },
   "scripts": {
-    "test:js": "eslint --ext js --ext jsx --env node --env browser -c index.js index.js typescript.js __test__",
-    "test:ts": "eslint --ext ts --ext tsx --env node --env browser -c __test__/typescript.extend.js index.js typescript.js __test__",
-    "test": "npm run test:js && npm run test:ts"
+    "test:js": "eslint --ext js --env node --env browser -c index.js __test__/assets",
+    "test:jsx": "eslint --ext jsx --env node --env browser -c react.js __test__/assets",
+    "test:ts": "eslint --ext ts --env node --env browser -c __test__/ts.extend.js __test__/assets",
+    "test:tsx": "eslint --ext tsx --env node --env browser -c __test__/tsx.extend.js __test__/assets",
+    "test": "npm run test:js && npm run test:jsx && npm run test:ts && npm run test:tsx"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^4.29.1",
     "@typescript-eslint/parser": "^4.29.1",
     "eslint-plugin-editorconfig": "^3.0.2",
-    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react": "^7.25.1",
     "typescript": "^4.4.2"
   }
 }

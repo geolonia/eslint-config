@@ -33,7 +33,37 @@ module.exports = {
 };
 ```
 
-### extends for React project
+### React projects sample
+
+```javascript
+module.exports = {
+  extends: [
+    '@geolonia/eslint-config/react',
+  ],
+  env: {
+    browser: true,
+  },
+};
+```
+
+### React projects with TypeScript sample
+
+```javascript
+module.exports = {
+  extends: [
+    '@geolonia/eslint-config/react',
+    '@geolonia/eslint-config/typescript',
+  ],
+  env: {
+    browser: true,
+  },
+  parserOptions: {
+    project: ['tsconfig.json']
+  }
+};
+```
+
+### extends sample for React project
 
 ```javascript
 // .eslintrc.js
