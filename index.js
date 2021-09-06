@@ -10,7 +10,7 @@ module.exports = {
     sourceType: 'module',
     ecmaVersion: 2015,
   },
-  plugins: ['editorconfig'],
+  plugins: ['editorconfig', 'import'],
   rules: {
     'array-callback-return': 'error',
     'arrow-parens': 'error',
@@ -43,5 +43,7 @@ module.exports = {
     'template-curly-spacing': 'error',
     'yield-star-spacing': 'error',
     yoda: ['error', 'never', { exceptRange: true }],
+
+    'import/no-extraneous-dependencies': ['warn', { 'devDependencies': false }],
   },
 };
