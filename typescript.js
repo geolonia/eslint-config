@@ -16,14 +16,14 @@ module.exports = {
     '@typescript-eslint/no-misused-promises': [ 'error', { 'checksConditionals': true }],
 
     '@typescript-eslint/ban-ts-comment': 'off',
+    '@typescript-eslint/ban-types': 'off',
     '@typescript-eslint/camelcase': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/no-empty-function': 'off',
-    '@typescript-eslint/ban-types': 'off',
-    '@typescript-eslint/explicit-module-boundary-types': 'off',
-    '@typescript-eslint/no-var-requires': 'off',
     '@typescript-eslint/no-extra-semi': 'off',
+    '@typescript-eslint/no-var-requires': 'off',
 
     // NOTE: rule conflictions
     // https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin#extension-rules'
@@ -46,6 +46,6 @@ module.exports = {
     '@typescript-eslint/quotes': config.rules['quotes'] || 'warn',
 
     'semi': 'off',
-    '@typescript-eslint/semi': config.rules['semi'] || 'warn',
+    '@typescript-eslint/semi': 'warn',
   },
 };
