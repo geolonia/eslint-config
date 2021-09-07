@@ -15,7 +15,7 @@ module.exports = {
     // https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin#supported-rules
     '@typescript-eslint/no-misused-promises': [ 'error', { 'checksConditionals': true }],
 
-    '@typescript-eslint/ban-ts-comment': 'off',
+    '@typescript-eslint/ban-ts-comment': ['warn', { 'ts-ignore': true }],
     '@typescript-eslint/ban-types': 'off',
     '@typescript-eslint/camelcase': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
