@@ -16,3 +16,10 @@ process.stdout.write(text);
 // @ts-ignore
 let a: number = 'aaa';
 process.stdout.write((a++).toString());
+
+export default class {
+  constructor() {
+    const self = this;
+    return self;
+  }
+};

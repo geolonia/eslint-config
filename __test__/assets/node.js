@@ -16,3 +16,10 @@ if (process.env.HELLO) {
 JSON.stringify({ a: 'a' });
 
 JSON.stringify([1, 1, 1, 1, 1]);
+
+module.exports = class {
+  constructor() {
+    const self = this;
+    return self;
+  }
+};
