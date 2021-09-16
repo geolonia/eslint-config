@@ -17,10 +17,10 @@ module.exports = {
     'arrow-spacing': 'error',
     'block-spacing': 'error',
     'comma-dangle': ['error', 'always-multiline'],
-    'comma-spacing': ['error', { before: false, after: true }],
+    'comma-spacing': ['warn', { before: false, after: true }], // TODO: force gradually
     //   indent: ['error', 2], // NOTE: Follow editorconfig
     'key-spacing': 'error',
-    'keyword-spacing': 'error',
+    'keyword-spacing': 'warn', // TODO: force gradually
     'generator-star-spacing': 'error',
     'no-console': 'warn',
     'no-duplicate-imports': 'error',
