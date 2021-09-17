@@ -7,7 +7,7 @@ ESLint shared config for Geolonia projects.
 ## Usage
 
 ```shell
-$ yarn add https://github.com/geolonia/eslint-config
+$ yarn add eslint @geolonia/eslint-config --dev
 ```
 
 ```javascript
