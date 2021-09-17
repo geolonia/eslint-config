@@ -5,6 +5,7 @@ declare -a REPOS=(
   "geolonia/app.geolonia.com"
   "geolonia/api.geolonia.com"
   "geolonia/api.app.geolonia.com"
+  "geolonia/utils"
 )
 
 mkdir -p repos
