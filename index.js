@@ -58,6 +58,7 @@ module.exports = {
         '**/*.spec.jsx',
         '**/*.spec.tsx',      ],
       rules: {
+        'no-import-assign': 'off',
         'import/no-extraneous-dependencies': 'off',
       },
     },
