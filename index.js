@@ -17,10 +17,10 @@ module.exports = {
     'arrow-spacing': 'error',
     'block-spacing': 'error',
     'comma-dangle': ['error', 'always-multiline'],
-    'comma-spacing': ['warn', { before: false, after: true }], // TODO: force gradually
+    'comma-spacing': ['error', { before: false, after: true }],
     //   indent: ['error', 2], // NOTE: Follow editorconfig
     'key-spacing': 'error',
-    'keyword-spacing': 'warn', // TODO: force gradually
+    'keyword-spacing': 'error',
     'generator-star-spacing': 'error',
     'no-console': 'warn',
     'no-duplicate-imports': 'error',
@@ -45,6 +45,11 @@ module.exports = {
     yoda: ['error', 'never', { exceptRange: true }],
 
     'import/no-extraneous-dependencies': ['warn', { 'devDependencies': false }],
+
+    // moderate those rules and wait for next breaking change
+    'block-spacing': 'warn',
+    'comma-spacing': ['warn', { before: false, after: true }],
+    'keyword-spacing': 'warn',
   },
   overrides: [
     {
