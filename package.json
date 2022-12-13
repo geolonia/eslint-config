@@ -15,9 +15,9 @@
   },
   "devDependencies": {
     "@types/node": "^16.6.0",
-    "@types/react": "^17.0.17",
-    "eslint": "^7.32.0",
-    "react": "^17.0.2"
+    "@types/react": "^18.0.26",
+    "eslint": "^8.29.0",
+    "react": "^18.2.0"
   },
   "scripts": {
     "test:js": "eslint --ext js --env node --env browser -c index.js __test__/assets",
@@ -26,11 +26,11 @@
     "test": "npm run test:js && npm run test:jsx && npm run test:ts"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.29.1",
-    "@typescript-eslint/parser": "^4.29.1",
-    "eslint-plugin-editorconfig": "^3.0.2",
-    "eslint-plugin-import": "^2.24.2",
-    "eslint-plugin-react": "^7.25.1",
-    "typescript": "^4.4.2"
+    "@typescript-eslint/eslint-plugin": "^5.46.1",
+    "@typescript-eslint/parser": "^5.46.1",
+    "eslint-plugin-editorconfig": "^4.0.2",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-react": "^7.31.11",
+    "typescript": "^4.9.4"
   }
 }
