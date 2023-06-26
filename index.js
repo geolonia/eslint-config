@@ -65,6 +65,34 @@ module.exports = {
       },
     },
     {
+      files: ["*.ts", "*.tsx"],
+      extends: [
+        'plugin:@typescript-eslint/recommended',
+      ],
+      rules: {
+        '@typescript-eslint/comma-dangle': ['error', 'always-multiline'],
+        '@typescript-eslint/comma-spacing': ['error', { before: false, after: true }],
+        '@typescript-eslint/no-duplicate-imports': 'error',
+        '@typescript-eslint/no-useless-constructor': 'error',
+        '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
+        '@typescript-eslint/quotes': ['error', 'single'],
+        '@typescript-eslint/semi': 'warn',
+
+        '@typescript-eslint/no-misused-promises': [ 'warn', { 'checksConditionals': true }],
+        '@typescript-eslint/ban-ts-comment': ['warn', { 'ts-ignore': true }],
+
+        '@typescript-eslint/ban-types': 'off',
+        '@typescript-eslint/camelcase': 'off',
+        '@typescript-eslint/explicit-function-return-type': 'off',
+        '@typescript-eslint/explicit-module-boundary-types': 'off',
+        '@typescript-eslint/no-explicit-any': 'off',
+        '@typescript-eslint/no-empty-function': 'off',
+        '@typescript-eslint/no-extra-semi': 'off',
+        '@typescript-eslint/no-this-alias': 'off',
+        '@typescript-eslint/no-var-requires': 'off',
+      },
+    },
+    {
       files: [
         '**/*.test.js',
         '**/*.test.ts',
