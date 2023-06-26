@@ -53,6 +53,18 @@ module.exports = {
       },
     },
     {
+      files: [ "*.cjs" ],
+      parserOptions: {
+        sourceType: "script",
+      },
+    },
+    {
+      files: [ "*.mjs", "*.jsx" ],
+      parserOptions: {
+        sourceType: "module",
+      },
+    },
+    {
       files: [
         '**/*.test.js',
         '**/*.test.ts',
