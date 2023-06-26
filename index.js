@@ -45,11 +45,6 @@ module.exports = {
     yoda: ['error', 'never', { exceptRange: true }],
 
     'import/no-extraneous-dependencies': ['warn', { 'devDependencies': false }],
-
-    // moderate those rules and wait for next breaking change
-    'block-spacing': 'warn',
-    'comma-spacing': ['warn', { before: false, after: true }],
-    'keyword-spacing': 'warn',
   },
   overrides: [
     {
