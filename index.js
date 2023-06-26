@@ -93,6 +93,24 @@ module.exports = {
       },
     },
     {
+      files: ["*.jsx", "*.tsx"],
+      extends: [
+        'plugin:react/recommended',
+      ],
+      env: {
+        browser: true,
+      },
+      settings: {
+        react: {
+          pragma: 'React',
+          version: 'detect',
+        },
+      },
+      rules: {
+        'react/prop-types': 'off',
+      },
+    },
+    {
       files: [
         '**/*.test.js',
         '**/*.test.ts',
