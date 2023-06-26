@@ -76,7 +76,7 @@ module.exports = {
         '@typescript-eslint/no-useless-constructor': 'error',
         '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
         '@typescript-eslint/quotes': ['error', 'single'],
-        '@typescript-eslint/semi': 'warn',
+        '@typescript-eslint/semi': ['error', 'always'],
 
         '@typescript-eslint/no-misused-promises': [ 'warn', { 'checksConditionals': true }],
         '@typescript-eslint/ban-ts-comment': ['warn', { 'ts-ignore': true }],
