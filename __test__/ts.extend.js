@@ -1,4 +1,4 @@
-const config = require('../typescript');
+const config = require('../index');
 
 module.exports = {
   ...config,
