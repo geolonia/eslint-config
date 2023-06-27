@@ -21,9 +21,8 @@
   },
   "scripts": {
     "test:js": "eslint --ext js --env node --env browser -c index.js __test__/assets",
-    "test:jsx": "eslint --ext jsx --env node --env browser -c react.js __test__/assets",
     "test:ts": "eslint --ext ts --env node --env browser -c __test__/ts.extend.js __test__/assets",
-    "test": "npm run test:js && npm run test:jsx && npm run test:ts"
+    "test": "npm run test:js && npm run test:ts"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.46.1",
