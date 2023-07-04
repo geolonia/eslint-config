@@ -4,11 +4,10 @@ module.exports = {
     'plugin:editorconfig/all',
   ],
   env: {
-    es6: true,
+    es2024: true,
   },
   parserOptions: {
     sourceType: 'module',
-    ecmaVersion: 2015,
   },
   plugins: ['editorconfig', 'import'],
   rules: {
