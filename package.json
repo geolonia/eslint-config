@@ -1,6 +1,6 @@
 {
   "name": "@geolonia/eslint-config",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Geolonia ESLint shared configs.",
   "main": "index.js",
   "author": "Geolonia (https://geolonia.com)",
