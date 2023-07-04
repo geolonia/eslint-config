@@ -36,7 +36,16 @@ module.exports = {
     'yield-star-spacing': 'error',
     yoda: ['error', 'never', { exceptRange: true }],
 
-    'import/no-extraneous-dependencies': ['warn', { 'devDependencies': false }],
+    'import/no-extraneous-dependencies': ['warn', {
+      'devDependencies': [
+        '**/.mocharc.js',
+        '**/.prettierrc.js',
+        '**/jest.config.js',
+        '**/next.config.js',
+        '**/vite.config.js',
+        '**/webpack.config.js',
+      ]
+    }],
   },
   overrides: [
     {
