@@ -78,7 +78,7 @@ module.exports = {
         '@typescript-eslint/quotes': ['error', 'single'],
         '@typescript-eslint/semi': ['error', 'always'],
 
-        '@typescript-eslint/no-misused-promises': [ 'warn', { 'checksConditionals': true }],
+        '@typescript-eslint/no-misused-promises': [ 'warn', { 'checksConditionals': true, 'checksVoidReturn': false }],
         '@typescript-eslint/ban-ts-comment': ['warn', { 'ts-ignore': true }],
 
         '@typescript-eslint/ban-types': 'off',
