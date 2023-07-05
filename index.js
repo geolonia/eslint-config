@@ -58,6 +58,8 @@ module.exports = {
         'no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
         quotes: ['error', 'single'],
         semi: ['error', 'always'],
+
+        'no-loss-of-precision': 'off',
       },
     },
     {
@@ -96,6 +98,7 @@ module.exports = {
         '@typescript-eslint/no-explicit-any': 'off',
         '@typescript-eslint/no-empty-function': 'off',
         '@typescript-eslint/no-extra-semi': 'off',
+        '@typescript-eslint/no-loss-of-precision': 'off',
         '@typescript-eslint/no-this-alias': 'off',
         '@typescript-eslint/no-var-requires': 'off',
       },
