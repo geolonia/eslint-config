@@ -118,3 +118,8 @@ dist
 .pnp.*
 
 /repos
+
+# Unnecessary lockfiles
+# package-lock.json and yarn.lock are ignored when published to npm
+package-lock.json
+yarn.lock
