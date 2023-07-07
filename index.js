@@ -118,7 +118,9 @@ module.exports = {
         },
       },
       rules: {
+        'react/jsx-uses-react': 'off', // `import React from 'react'` is not required in React 17+
         'react/prop-types': 'off',
+        'react/react-in-jsx-scope': 'off', // `import React from 'react'` is not required in React 17+
       },
     },
     {
