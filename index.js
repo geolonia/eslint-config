@@ -107,10 +107,12 @@ module.exports = {
       files: ["*.jsx", "*.tsx"],
       extends: [
         'plugin:react/recommended',
+        'plugin:react-hooks/recommended',
       ],
       env: {
         browser: true,
       },
+      plugins: ['react', 'react-hooks'],
       settings: {
         react: {
           pragma: 'React',
