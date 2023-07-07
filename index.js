@@ -79,6 +79,10 @@ module.exports = {
       extends: [
         'plugin:@typescript-eslint/recommended',
       ],
+      parser: '@typescript-eslint/parser',
+      parserOptions: {
+        sourceType: "module",
+      },
       rules: {
         '@typescript-eslint/comma-dangle': ['error', 'always-multiline'],
         '@typescript-eslint/comma-spacing': ['error', { before: false, after: true }],
