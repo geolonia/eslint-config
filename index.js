@@ -79,6 +79,10 @@ module.exports = {
       extends: [
         'plugin:@typescript-eslint/recommended',
       ],
+      parser: '@typescript-eslint/parser',
+      parserOptions: {
+        sourceType: "module",
+      },
       rules: {
         '@typescript-eslint/comma-dangle': ['error', 'always-multiline'],
         '@typescript-eslint/comma-spacing': ['error', { before: false, after: true }],
@@ -107,10 +111,12 @@ module.exports = {
       files: ["*.jsx", "*.tsx"],
       extends: [
         'plugin:react/recommended',
+        'plugin:react-hooks/recommended',
       ],
       env: {
         browser: true,
       },
+      plugins: ['react', 'react-hooks'],
       settings: {
         react: {
           pragma: 'React',
@@ -118,7 +124,9 @@ module.exports = {
         },
       },
       rules: {
+        'react/jsx-uses-react': 'off', // `import React from 'react'` is not required in React 17+
         'react/prop-types': 'off',
+        'react/react-in-jsx-scope': 'off', // `import React from 'react'` is not required in React 17+
       },
     },
     {
