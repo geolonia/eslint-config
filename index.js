@@ -19,7 +19,6 @@ module.exports = {
     'key-spacing': 'error',
     'keyword-spacing': 'error',
     'generator-star-spacing': 'error',
-    'no-console': 'warn',
     'no-useless-computed-key': 'error',
     'no-useless-rename': 'error',
     'no-var': 'error',
