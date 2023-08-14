@@ -39,11 +39,14 @@ module.exports = {
 
     'import/no-extraneous-dependencies': ['warn', {
       'devDependencies': [
+        '**/.eslintrc.js',
+        '**/.eslintrc.cjs',
         '**/.mocharc.js',
         '**/.prettierrc.js',
         '**/jest.config.js',
         '**/next.config.js',
         '**/vite.config.js',
+        '**/vite.config.ts',
         '**/webpack.config.js',
       ]
     }],
