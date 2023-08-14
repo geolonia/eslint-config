@@ -48,13 +48,13 @@ module.exports = {
         '**/vite.config.js',
         '**/vite.config.ts',
         '**/webpack.config.js',
-      ]
+      ],
     }],
     'promise/prefer-await-to-then': 'error',
   },
   overrides: [
     {
-      files: ["*.js", "*.cjs", "*.mjs", "*.jsx"],
+      files: ['*.js', '*.cjs', '*.mjs', '*.jsx'],
       rules: {
         'comma-dangle': ['error', 'always-multiline'],
         'comma-spacing': ['error', { before: false, after: true }],
@@ -68,25 +68,25 @@ module.exports = {
       },
     },
     {
-      files: [ "*.cjs" ],
+      files: [ '*.cjs' ],
       parserOptions: {
-        sourceType: "script",
+        sourceType: 'script',
       },
     },
     {
-      files: [ "*.mjs", "*.jsx" ],
+      files: [ '*.mjs', '*.jsx' ],
       parserOptions: {
-        sourceType: "module",
+        sourceType: 'module',
       },
     },
     {
-      files: ["*.ts", "*.tsx"],
+      files: ['*.ts', '*.tsx'],
       extends: [
         'plugin:@typescript-eslint/recommended',
       ],
       parser: '@typescript-eslint/parser',
       parserOptions: {
-        sourceType: "module",
+        sourceType: 'module',
       },
       rules: {
         '@typescript-eslint/comma-dangle': ['error', 'always-multiline'],
@@ -113,7 +113,7 @@ module.exports = {
       },
     },
     {
-      files: ["*.jsx", "*.tsx"],
+      files: ['*.jsx', '*.tsx'],
       extends: [
         'plugin:react/recommended',
         'plugin:react-hooks/recommended',
@@ -143,7 +143,8 @@ module.exports = {
         '**/*.spec.js',
         '**/*.spec.ts',
         '**/*.spec.jsx',
-        '**/*.spec.tsx',      ],
+        '**/*.spec.tsx',
+      ],
       rules: {
         'no-import-assign': 'off',
         'import/no-extraneous-dependencies': 'off',
