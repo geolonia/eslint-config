@@ -2,6 +2,7 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:editorconfig/all',
+    'plugin:promise/recommended',
   ],
   env: {
     es2024: true,
@@ -9,7 +10,7 @@ module.exports = {
   parserOptions: {
     sourceType: 'module',
   },
-  plugins: ['editorconfig', 'import'],
+  plugins: ['editorconfig', 'import', 'promise'],
   rules: {
     'array-callback-return': 'error',
     'arrow-parens': 'error',
@@ -46,6 +47,7 @@ module.exports = {
         '**/webpack.config.js',
       ]
     }],
+    'promise/prefer-await-to-then': 'error',
   },
   overrides: [
     {
