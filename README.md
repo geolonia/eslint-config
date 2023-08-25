@@ -13,7 +13,7 @@ $ yarn add eslint @geolonia/eslint-config --dev
 ```javascript
 // .eslintrc.js
 module.exports = {
-  exetends: ['@geolonia'],
+  extends: ['@geolonia'],
 
   // add `env` if required
   env: {
